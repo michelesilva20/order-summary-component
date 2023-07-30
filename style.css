@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --Mobile: 375px;
+  --Desktop: 1440px;
+
+  --Pale-blue: hsl(225, 100%, 94%);
+  --Bright-blue: hsl(245, 75%, 52%);
+
+  --Very-pale-blue: hsl(225, 100%, 98%);
+  --Desaturated-blue: hsl(224, 23%, 55%);
+  --Dark-blue: hsl(223, 47%, 23%);
+
+  --font-size: 16px;
+
+  --font: 'Red Hat Display', sans-serif;
+}
+
+h1,p,span,a,button{
+  font-family: var(--font);
+}
+
+main{
+  background-image: url('images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  background-color:var(--Pale-blue);
+  width: 100%;
+}
+
+.card{
+  background-color: white;
+  width: 300px;
+  border-radius: 0.7rem;
+  height: 470px;
+}
+
+.img-principal img{
+  width: 100%;
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+
+h1{
+  font-size: 1.4rem;
+  color: var(--Dark-blue);
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 1rem;
+  cursor: default;
+}
+
+.body-card{
+  padding: 1.5rem;
+}
+
+.text p{
+  font-size: 12px;
+  color: var(--Desaturated-blue);
+  text-align: center;
+  margin-bottom: 1rem;
+  cursor: default;
+}
+
+.plan{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: default;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.container img{
+  width: 32px;
+}
+
+.price p{
+  margin-bottom: 0.2rem;
+  color: var(--Dark-blue);
+  font-weight: 700;
+}
+
+.price span{
+  color: var(--Desaturated-blue);
+}
+
+.price{
+  font-size: 0.8rem;
+  margin-left: 1rem;
+}
+
+.plan a{
+  color: var(--Bright-blue);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.plan a:hover{
+  color: var(--Desaturated-blue);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.plan{
+  background-color: var(--Very-pale-blue);
+  padding: 1rem;
+  border-radius: 0.6rem;
+  margin-bottom: 1rem;
+}
+
+.button-one{
+  background-color: var(--Bright-blue);
+  width: 100%;
+  color: white;
+  font-weight: 700;
+  border: none;
+  padding: 0.7rem 0;
+  border-radius: 0.5rem;
+  font-size: 0.7rem;
+  box-shadow: 0px 6px 10px #cdcdcd;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-one:hover{
+  background-color: hsl(245, 74%, 68%);
+}
+
+.button-two{
+  background: none;
+  border: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  color: var(--Desaturated-blue);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-two:hover{
+  color: var(--Dark-blue);
+}
+
+@media (max-width: 375px){
+  main{
+    background-image: url('images/pattern-background-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color:var(--Pale-blue);
+    width: 100%;
+  }
+}
